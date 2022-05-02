@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Alura Challenge: Decodificador</title>
+</head>
+
+<body>
+
+    <header>
+        <img class="logo" src="./template/logo.png" alt="Logo Alexa desenvolvedora">
+
+    </header>
+   
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="div1">
+
+                        <div class="right">
+                            <div class="input">
+                                <textarea name="message" rows="10" cols="50" id="input"
+                                    placeholder="Digite a mensagem que você quer codificar..."></textarea>
+                            </div>
+                            <p><img class="info" src="./template/info.svg" alt="">
+                                Apenas letras minúsculas sem acento.</p>
+                            <div class="button">
+
+                                <button onclick="codificar()" class="botao-cod" id="codificar">Codificar</button>
+                                <button onclick="decodificar()" class="botao-decod"
+                                    id="decodificar">Decodificar</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div id="div2">
+
+                        <div class="left">
+                            <img src="./template/procurando.svg" alt="">
+                            <div class="out">
+
+                                <textarea name="message" rows="10" cols="45" id="out"
+                                    placeholder="Nenhuma mensagem encontrada. Digite o texto que deseja codificar"></textarea>
+                            </div>
+                            <div class="button">
+                                <button onclick="copiar()" class="copy" id="copy">Copiar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <footer>
+        <div class="row mb-3">
+            <div class="col-md-12 d-flex justify-content-center">
+
+                <a href="https://github.com/AlexaPim" target="_blank" class="p-3">
+                    <img class="tm-social" src="./template/github.png" alt="Logo do Github">
+                </a>
+                <a href="https://www.linkedin.com/in/alexssandra-pimentel/" target="_blank" class="p-3">
+                    <img class="tm-social" src="./template/linkedin.png" alt="Logo do Linkedin">
+                </a>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-center">&copy;2022 Todos os direitos reservados para: Alexa Pim </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
