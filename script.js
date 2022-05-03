@@ -1,4 +1,4 @@
-var input = document.querySelector("input");
+var input = document.querySelector("#input");
 input.focus();
 
 var button = document.querySelector("button");
